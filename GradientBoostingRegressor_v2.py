@@ -56,8 +56,8 @@ random.seed(SEED)
 # =========================
 # Konfiguracija
 # =========================
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/KvantniRegresor/GradientBoostingRegressor_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/GradientBoostingRegressor_v2_predikcija.txt")
 N_MIN, N_MAX = 1, 39
 K = 7
 LAG = 5
@@ -270,7 +270,7 @@ print()
 print(f"Prediction of GBR_v2 (top-7): {predicted_numbers_v2.tolist()}  ({describe(predicted_numbers_v2)})")
 print()
 """
-Prediction of GBR_v2 (top-7): [8, 18, 23, 27, 28, 29, 30]  (suma=163, neparnih=3/7, niskih(<=19)=2/7, raspon=22)
+Prediction of GBR_v2 (top-7): [8, x, 23, y, 28, z, 30]  (suma=163, neparnih=3/7, niskih(<=19)=2/7, raspon=22)
 """
 
 
@@ -308,11 +308,11 @@ print()
 
 """
 Prediction of Ball 1 is [3.0000538661179] 
-Prediction of Ball 2 is [9.000023235489401] 
+Prediction of Ball 2 is [x.000023235489401] 
 Prediction of Ball 3 is [4.001086158537905] 
-Prediction of Ball 4 is [25.999830653097156] 
+Prediction of Ball 4 is [y.999830653097156] 
 Prediction of Ball 5 is [29.99987162756386] 
-Prediction of Ball 6 is [33.999901963504676] 
+Prediction of Ball 6 is [z.999901963504676] 
 Prediction of Ball 7 is [35.99998040171298] 
 """
 
@@ -327,7 +327,7 @@ print(f"Sum is good!") if S >= 120 and S <= 190 else print(f"Sum of prediction i
 print()
 
 """
-Predicted Numbers: [3, 4, 9, 26, 30, 34, 36]
+Predicted Numbers: [3, x, 9, y, 30, z, 36]
 
 Sum of numbers: 142.00074790602386
 Sum is good!
@@ -385,19 +385,19 @@ Treniranje GradientBoostingRegressor multi-label (39 izlaza) ...
 ✅ GBR_v2 treniran.
 
 
-Prediction of GBR_v2 (top-7): [8, 18, 23, 27, 28, 29, 30]  (suma=163, neparnih=3/7, niskih(<=19)=2/7, raspon=22)
+Prediction of GBR_v2 (top-7): [8, x, 23, y, 28, z, 30]  (suma=163, neparnih=3/7, niskih(<=19)=2/7, raspon=22)
 
 
 Prediction of Ball 1 is [3.0000538661179] 
-Prediction of Ball 2 is [9.000023235489401] 
+Prediction of Ball 2 is [x.000023235489401] 
 Prediction of Ball 3 is [4.001086158537905] 
-Prediction of Ball 4 is [25.999830653097156] 
+Prediction of Ball 4 is [y.999830653097156] 
 Prediction of Ball 5 is [29.99987162756386] 
-Prediction of Ball 6 is [33.999901963504676] 
+Prediction of Ball 6 is [z.999901963504676] 
 Prediction of Ball 7 is [35.99998040171298] 
 
 
-Predicted Numbers: [3, 4, 9, 26, 30, 34, 36]
+Predicted Numbers: [3, x, 9, y, 30, z, 36]
 
 Sum of numbers: 142.00074790602386
 Sum is good!
@@ -408,7 +408,7 @@ model      hits/7    hit%     AUC    LRAP
 GBR_v2      1.140   16.3%   0.497   0.238
 (slučajan baseline ≈ 1.256 hits/7)
 
-Snimljeno u: /Users/4c/Desktop/GHQ/KvantniRegresor/GradientBoostingRegressor_v2_predikcija.txt
+Snimljeno u: /GradientBoostingRegressor_v2_predikcija.txt
 
 STOP 2026-05-24 19:18:05.449784
 Ukupno vreme: 0:08:52  (532.6 s)
