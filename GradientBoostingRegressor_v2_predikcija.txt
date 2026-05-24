@@ -1,0 +1,5 @@
+
+--- 2026-05-24 19:18:05.449616 (seed=39, N=4620) ---
+GBR_v2 (top-7)                    -> [8, 18, 23, 27, 28, 29, 30]  (suma=163, neparnih=3/7, niskih(<=19)=2/7, raspon=22)
+GBR_pozicioni (stari tok, sortiran)-> [3, 4, 9, 26, 30, 34, 36]
+back-test GBR_v2: hits/7=1.140, baseline=1.256, AUC=0.497, LRAP=0.238
